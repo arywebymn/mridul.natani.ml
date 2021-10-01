@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="icon" href="assets/icons/mazeico.png">
+    <title>AMaze.Me</title>
+  </head>
+  <body>
+    <div id="pageWrapper" class="container-fluid no-gutters">
+      <!-- Header -->
+      <header class="headerWrapper row no-gutters">
+
+        <div class="navWrapper">
+          <nav class="navbar">
+            <a href="#" id="menuBtn" class="navbar-toggler" data-toggle="collapse" data-target="#splashscreen" aria-controls="splashscreen" aria-expanded="false" aria-label="Toggle navigation">
+              <svg class="nav-menu-icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 500 500">
+                <g id="menu_icon" data-name="menu_icon">
+                  <line class="nav-menu_icon_line" x1="50" y1="50" x2="450" y2="50"/>
+                  <line class="nav-menu_icon_line" x1="50" y1="250" x2="450" y2="250"/>
+                  <line class="nav-menu_icon_line" x1="50" y1="450" x2="450" y2="450"/>
+                </g>
+              </svg>
+            </a>
+            <div class="collapse navbar-collapse show" id="splashscreen">
+              <h1 class="splashtext">Objective</h1>
+              <p class="splashtext">
+                Collect the objects in the maze in the correct order
+                as quickly as possible.
+              </p>
+              <h1 class="splashtext">How to play</h1>
+              <p class="splashtext">
+                Move forward by pressing 'W' or the up arrow key and backwards
+                by pressing 'S' or down arrow key.
+              </p>
+              <p class="splashtext">
+                Turn left with 'A' and right with 'D' or the arrow keys.
+              </p>
+              <p class="splashtext">
+                To pickup objects press 'E' or the spacebar.
+              </p>
+              <p class="splashtext">
+                For touch screens: hold anywhere on the screen to activate the
+                virtual joystick. Tap to pick up objects.
+              </p>
+              <hr class="splashseparator" />
+              <p class="splashtext">
+                Select "Learn" to move around the maze and learn it's layout.
+              </p>
+              <p class="splashtext">
+                When you're ready select "Play" and try to get the fastest time!
+              </p>
+              <hr class="splashseparator" />
+              <!-- using a form here stops the nav
+                    dropdown closing automatically -->
+              <form class="splashform">
+                <!-- Difficulty selector -->
+                <div id="difficultycontrols" class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-primary active">
+                    <input type="radio" name="options" id="optEasy" checked>
+                      Easy
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="radio" name="options" id="optNormal">
+                      Normal
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="radio" name="options" id="optHard">
+                      Hard
+                  </label>
+                </div>
+                <!-- Game start controls -->
+                <div id="gamecontrols">
+                  <button id="learnBtn" class="btn btn-secondary game-btn" type="button">
+                    Learn
+                  </button>
+                  <button id="playBtn" class="btn btn-secondary game-btn" type="button">
+                    Play
+                  </button>
+                </div>
+              </form>
+            </div>
+          </nav>
+        </div>
+
+        <!-- Pause control here -->
+        <div id="clock" class="gameclock">0:00</div>
+
+      </header>
+      <!-- /Header -->
+      <!-- Content -->
+      <div class="row no-gutters">
+        <div id="gameDiv" class="gameWrapper col-12">
+          <canvas id="gameCanvas"></canvas>
+        </div>
+      </div>
+      <!-- /Content -->
+    </div>
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Third party virtual joystick library  -->
+    <script src="assets/scripts/libraries/virtualjoystick.js"></script>
+    <!-- Engine Scripts -->
+    <script src="assets/scripts/helpers.js"></script>
+    <script src="assets/scripts/types.js"></script>
+    <script src="assets/scripts/templates.js"></script>
+    <script src="assets/scripts/map.js"></script>
+    <script src="assets/scripts/ray.js"></script>
+    <script src="assets/scripts/camera.js"></script>
+    <!-- Game scripts -->
+    <script src="assets/scripts/object.js"></script>
+    <script src="assets/scripts/player.js"></script>
+    <script src="assets/scripts/gamestate.js"></script>
+    <script src="assets/scripts/main.js"></script>
+
+  </body>
+</html>
