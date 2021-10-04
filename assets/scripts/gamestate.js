@@ -102,9 +102,9 @@ GameState.prototype.setupGame = function (mapTemplate) {
   this.map = new RayMap2(mapTemplate, wallDefs);
   this.player = new Player( this,
                             this.map,
-                            2.0,    //Movement speed (world units per-second)
-                            0.4,    //Turning speed (radians per-second)
-                            0.5,    //Player object radius (world units)
+                            1.5,    //Movement speed (world units per-second)
+                            0.5,    //Turning speed (radians per-second)
+                            0.6,    //Player object radius (world units)
                             1.0,    //Interaction distance (world units)
                             aspectRatio); //FOV in radians
 
