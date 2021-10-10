@@ -62,7 +62,7 @@ var wallDefs = [
   //Gate
   {name: "gate", texture: "gate.png", passable: false, transparent: true},
   //Hedge
-  {name: "hedge", texture: "hedge.png", passable: false, transparent: false}
+  {name: "hedge", texture: "website-wall-pattern-1.jpeg", passable: false, transparent: false}
   //Brick wall    - Not Yet Implimented
   //Stone wall    - Not Yet Implimented
   //Fence         - Not Yet Implimented

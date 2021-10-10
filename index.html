@@ -27,7 +27,7 @@
                 </g>
               </svg>
             </a>
-            <div class="collapse navbar-collapse show" id="splashscreen">
+            <div class="collapse navbar-collapse hide" id="splashscreen">
               <h1 class="splashtext">Hello Visitor!</h1>
               <p class="splashtext">
                 Explore different parts of the maze to know more about me!
@@ -59,7 +59,7 @@
                     dropdown closing automatically -->
               <form class="splashform">
                 <!-- Difficulty selector -->
-                <div id="difficultycontrols" class="btn-group btn-group-toggle" data-toggle="buttons">
+                <!-- <div id="difficultycontrols" class="btn-group btn-group-toggle" data-toggle="buttons">
                   <label class="btn btn-primary active">
                     <input type="radio" name="options" id="optEasy" checked>
                       Easy
@@ -72,13 +72,13 @@
                     <input type="radio" name="options" id="optHard">
                       Hard
                   </label>
-                </div>
+                </div> -->
                 <!-- Game start controls -->
                 <div id="gamecontrols">
                   <!-- <button id="learnBtn" class="btn btn-secondary game-btn" type="button">
                     Learn
                   </button> -->
-                  <button id="playBtn" class="btn btn-secondary game-btn" type="button">
+                  <button id="playBtn" class="btn btn-secondary game-btn" type="button" aria-checked="true">
                     Enter
                   </button>
                 </div>
